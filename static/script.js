@@ -19,3 +19,34 @@ navItem.forEach(item => {
         }
     })
 })
+
+/* Animação de scroll*/
+
+const item = document.querySelectorAll("[data-anime]")
+
+const animeScroll = () => {
+    const windowTop = window.pageYOffset + window.innerHeight * 0.85     /* pageyoffset verifica a distância no eixo y do topo da tela*/
+
+    item.forEach((element) => {
+        if(windowTop > element.offsetTop){     /* Verifica a distância do topo até o elemento data-anime (elemento) */
+            element.classList.add("animate")
+        }else{
+            element.classList.remove("animate")
+        }
+    })
+}
+animeScroll()
+
+window.addEventListener("scroll", () =>{
+    animeScroll()
+})
+
+// Ativar carregamento do botão enviar do formulário de contato
+
+const btnEnviar = document.querySelector("#btn-enviar")
+const btnEnviarLoader = document.querySelector("#btn-enviar-loader")
+
+btnEnviar.addEventListener("click", () => {
+    btnEnviarLoader.style.display = "block"
+    btnEnviar.style.display = "none"
+})
