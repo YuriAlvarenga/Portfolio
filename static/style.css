@@ -45,7 +45,7 @@ html, body{
     background: #095b81;
 }
 .nav-menu{
-    margin-top: 20px;
+    margin-top: 15px;
     padding: 1.5 rem;
 }
 .nav-menu a,
@@ -160,4 +160,8 @@ i.menu-mobile{
 }
 *::-webkit-scrollbar-thumb{
     background-color: #021124;
+}
+
+.section-bg{
+    background: #eff5ff;
 }
