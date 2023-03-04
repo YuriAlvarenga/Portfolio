@@ -165,3 +165,8 @@ i.menu-mobile{
 .section-bg{
     background: #eff5ff;
 }
+
+
+.carousel-indicators{
+    margin-bottom: -35px;
+}
